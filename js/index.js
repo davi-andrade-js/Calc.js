@@ -1,7 +1,7 @@
 import calculate from "./calculate.js";
 import copyToClipboard from "./copyToClipboard.js";
 import { handleButtonPress, handleClear, handleTyping } from "./keyHandlers.js";
-import switchTheme from "./switchTheme.js";
+import switchTheme from "./themeSwitcher.js";
 
 document.querySelectorAll(".charKey").forEach(function (charKeyBtn) {
   charKeyBtn.addEventListener("click", handleButtonPress);

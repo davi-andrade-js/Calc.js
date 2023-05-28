@@ -1,11 +1,8 @@
-export default function copyToClipboard(ev) {
-  const button = ev.currentTarget;
-  if (button.innerText === "Copy") {
-    button.innerText = "Copied!";
-    button.classList.add("success");
-    navigator.clipboard.writeText(document.querySelector("#result").value);
-  } else {
-    button.innerText = "Copy";
-    button.classList.remove("success");
-  }
+export default function calculate() {
+  const resultInput = document.querySelector("#result");
+  resultInput.value = "ERROR";
+  resultInput.classList.add("error");
+  const result = eval(input.value);
+  resultInput.value = result;
+  resultInput.classList.remove("error");
 }
